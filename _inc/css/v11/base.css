@@ -6,7 +6,7 @@
  */
 
 /*
-LAYOUT
+ LAYOUT
 ==================================*/
 html,
 body{
@@ -28,9 +28,10 @@ body{
 	.cols .c33,
 	.cols .c50,
 	.cols .cw{
-		display: inline;
+		//display: inline;
 		_zoom: 1;
 	}
+
 .c1{
 	float: left;
 }
@@ -51,20 +52,20 @@ body{
 }
 
 .cols,
-.cols .c-last{
+.cols .clast{
 	overflow: visible;
 	width: auto !important;
 }
-.cols .c-last{
-	float: none;
-	overflow: hidden;
-	_float: right;
-	_overflow: visible;
-}
+	.cols .clast{
+		float: none;
+		overflow: hidden;
+		_float: right;
+		_overflow: visible;
+	}
 
 
 /*
-BASE CLASSES
+ BASE CLASSES
 ==================================*/
 .fleft{ float:left; }
 .fright{ float:right; }
@@ -186,7 +187,7 @@ a.h{
 	}
 
 /*
-ROUND
+ ROUND
 ==================================*/
 .rc{
 	display: block;
@@ -224,12 +225,14 @@ ROUND
 	}
 
 /*
-BUTTONS
+ BUTTONS
 ==================================*/
+/* TODO */
+/*
 .button{ }
 	.button .b,
 	.button ins{
-		background: transparent url(/_pic/btn-orange.png) no-repeat 0 0;
+		background: transparent no-repeat 0 0;
 	}
 	.button,
 	.button .b{
@@ -256,3 +259,4 @@ BUTTONS
 		top:0;left:0;
 		margin-left: 100%;
 	}
+*/

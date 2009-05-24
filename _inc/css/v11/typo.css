@@ -43,11 +43,10 @@ CONTENT
 a{
 	color: #000059;
 	font-size: 1em;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 p{
-	color: #595959;
 	font-size: 1em;
 	line-height: 1.4em;
 	margin: 0.3em 0 .5em;
@@ -112,7 +111,7 @@ select option,
 textarea{
 	font-family: Tahoma, sans-serif;
 	font-size: 1em;
-	line-height: 100%;
+	line-height: 1em;
 }
 
 input.text,
@@ -122,6 +121,7 @@ textarea{
 form input.cond{
 	width: 150px;
 }
+
 form input.submit{
 	border: none;
 	color: #333;
@@ -156,22 +156,22 @@ form .comment{
 	padding: 0.4em 0 .6em
 }
 
-form .line{
-	clear: both;
-	padding: 0.4em 0;
-	position: relative;
-	width: 100%;
-}
-	form .line .field{
+form dl.line{}
+	form dl.line dt{
 		display: inline;
 		float: left;
-		margin-right: -12em;
-		width: 12em;
+		margin-right: -5.5em;
+		width: 5.5em;
 	}
-	form .line .value{
+		form dl.line dt label{
+			position: relative;
+			top: .3em;
+		}
+	form dl.line dd{
 		display: block;
-		padding-left: 12.7em;
+		padding-left: 5.7em;
 	}
+
 
 form input.pseudo{
 	position: absolute;
