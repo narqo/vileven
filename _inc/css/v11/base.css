@@ -97,6 +97,7 @@ br.clearall{
 	min-height: 1%;
 }
 
+/*
 .graph{
 	display:block;
 	line-height:1;
@@ -115,6 +116,7 @@ br.clearall{
 		z-index:1;
 	}
 	a.graph i{ cursor:pointer; }
+*/
 
 /* graph header */
 .h{
