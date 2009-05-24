@@ -1,0 +1,154 @@
+/**
+ * index.css
+ *
+ * @author: Vladimir 'Vii' Varankin
+ * @copyright: Webway IT Labs (www.webway.ru) | 2009
+ */
+
+@import url("v11/reset.css");
+@import url("v11/base.css");
+@import url("v11/typo.css");
+
+
+html{
+	*font-size: 101%;
+	position: relative;
+	z-index: 0;
+}
+
+body{
+	background: #fff;
+	color: #000;
+	font: normal 62.5% Tahoma, sans-serif;
+}
+
+
+.dynamic,
+.dynamic *{
+	text-decoration: none !important;
+}
+	.dynamic *{
+		border-bottom: 1px dashed;
+	}
+
+
+.b-pager{
+	overflow: hidden;
+	//zoom: 1;
+}
+	/*
+	.b-pager .ico-prev,
+	.b-pager .ico-next{
+		background-image: url(../_pic/ico-pager_ctrls.png);
+	}
+	.b-pager a.ico-prev{ background-position:0 0; }
+	.b-pager a.ico-next{ background-position:-5px 0; }
+	.b-pager span.ico-prev{ background-position:0 -9px; }
+	.b-pager span.ico-next{ background-position:-5px -9px; }
+	*/
+
+	.b-pager .first{
+		padding: 0 1.3em 0 0;
+	}
+	.b-pager .last{
+		padding: 0 0 0 1.3em;
+	}
+	.b-pager *{
+		text-decoration: none;
+	}
+	.b-pager li{
+		font-size: 1.2em;
+	}
+	.b-pager a{
+	}
+
+
+.list-items{
+	overflow: hidden;
+	padding: 0;
+	_position: relative;
+	_z-index: 1;
+	margin: 0 0 0 -12px;
+}
+	.list-items .item{
+		display: -moz-inline-stack;
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		margin: 0;
+		vertical-align: top;
+	}
+		.list-items .item *{
+			color: #6E6456;
+			font-weight: normal;
+		}
+
+		.list-items .item h4{
+			font-size: 1em;
+			position: relative;
+			z-index: 1;
+			margin: 35px 0 0 12px;
+			min-width: 12em;
+			_width: 12em;
+		}
+			.list-items .item h4 *{
+				font-style: normal;
+				text-decoration: none;
+			}
+			.list-items .item h4 i{
+				display: inline-block;
+				width: 12em;
+				margin-left: 1em;
+			}
+		.list-items .item a{
+			color: #6E6456;
+		}
+
+		.list-items .item img{
+			position: relative;
+			top: -5px;
+		}
+
+
+/*
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[ GLOBAL ]
+*/
+#layout,
+#ft{
+	font-size: 1.1em;
+}
+#layout{
+}
+
+
+/*
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[ HEADER / #hd ]
+*/
+#hd{ }
+
+
+/*
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[ BODY / #bd ]
+*/
+#bd{ }
+
+#pillow{
+	clear: both;
+}
+
+
+/*
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[ FOOTER / #ft ]
+*/
+#ft{ }
+
+
+/*
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[ INDEX / body#index ]
+*/
+body#index{}

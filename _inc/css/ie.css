@@ -1,0 +1,80 @@
+/**
+ * ie.css
+ * InternetExplorer's css fixes
+ *
+ * @author: Vladimir 'Vii' Varankin
+ * @copyright: Webway IT Labs (www.webway.ru) | 2009
+ */
+
+* html{
+	/**
+		part of ie's position fixed solution
+		(with no additional http-request)
+	*/
+	_background: url(about:blank) no-repeat fixed;
+
+	/*
+		sprites' blinking fix
+	*/
+	filter: expression(
+		runtimeStyle.filter = '',
+		document.execCommand('BackgroundImageCache', false, true)
+	);
+}
+
+a{
+	cursor: pointer;
+	cursor: hand;
+}
+
+textarea{
+	overflow: auto;
+}
+
+.hor li{
+	//display: inline;
+	//zoom: 1;
+}
+
+* html #layout{
+	/**
+  		min-/max-width
+	*/
+	/*
+	width: expression(
+		(document.body.clientWidth < 999) ? '999px' : (document.body.clientWidth > 1600 ? '1600px' :'auto')
+	);
+	height:100%;
+	*/
+}
+
+
+* html .rc{
+	zoom:1;
+}
+
+/**
+	rc-shape + png-24 solution
+	. quirks mode must be turned on (ie's height:100% bug)
+	. filter perform much quicker than pngfix
+*/
+/* html .rc-shape{
+	height:1px;*
+	overflow:visible;
+}
+	* html .rc-shape .t,
+	* html .rc-shape .b{
+		background-image:none;
+		filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',src='/_pic/rc-shape.png',sizingMethod='crop');
+	}
+	* html .rc-shape .tl{ clip:rect(7px 170px 80px 7px); }
+	* html .rc-shape .tr{ clip:rect(7px 7px 80px 0); }
+	* html .rc-shape .bl{ clip:rect(0 170px 7px 7px); }
+	* html .rc-shape .br{ clip:rect(0 7px 7px 0); }
+*/
+
+/*
+* html .png{
+	behavior: url(iepngfix.htc);
+}
+*/

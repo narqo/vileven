@@ -1,0 +1,59 @@
+/**
+ * print.css
+ *
+ * @author: Vladimir 'Vii' Varankin
+ * @copyright: Webway IT Labs (www.webway.ru) | 2009
+ */
+
+
+body{
+	background:#fff;
+	margin:.2in .55in;
+	padding:0;
+	font:12pt "Times New Roman", serif;
+}
+
+/*
+ HIDE SECONDARIES
+==================================*/
+.secondary{
+	display:none;
+}
+
+/*
+ Typo
+==================================*/
+h1,h2,h3{
+	margin:1em 0 .5em;
+	font-family:Georgia,serif;
+	font-weight:normal;
+	clear:both;
+}
+	h1{
+		margin-top:.5em;
+		font-size:180%;
+	}
+	h2{
+		font-size:140%;
+		margin:.3em 0 0 0;
+		padding-bottom:0;
+	}
+	h3{
+		font-size:120%;
+		margin-bottom:0;
+	}
+
+p{
+	margin:0 0 .6em 0;
+}
+
+/*
+ Links
+==================================*/
+a{
+	color:black;
+	text-decoration:none;
+}
+  a img{
+    border:none;
+  }

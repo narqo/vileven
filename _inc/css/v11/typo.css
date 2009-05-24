@@ -1,0 +1,229 @@
+/**
+ * typo.css
+ * Typical elements
+ *
+ * @author: Vladimir 'Vii' Varankin
+ * @copyright: Webway IT Labs (www.webway.ru) | 2009
+ */
+
+/*
+HEADLINES
+==================================*/
+h1,h2,h3{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	line-height: 120%;
+}
+	h1 a, h2 a, h3 a{
+		font-size: 1em;
+		text-decoration: none;
+	}
+
+h1{
+	font-size: 150%;
+	margin: 0.7em 0 1.2em;
+}
+h2{
+	font-size: 140%;
+	margin: 0.7em 0 .5em
+}
+h3{
+	font-size: 120%;
+	margin: 0.3em 0 .5em;
+}
+h4{
+	font-size: 1em;
+	margin: 0.5em 0 .2em;
+}
+
+
+/*
+CONTENT
+==================================*/
+a{
+	color: #000059;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+p{
+	color: #595959;
+	font-size: 1em;
+	line-height: 1.4em;
+	margin: 0.3em 0 .5em;
+	padding: 0;
+}
+	p img{
+		margin: 1em;
+		padding: 0.4em;
+	}
+	p img[align=right]{
+		float: right;
+		margin-right: 0;
+	}
+	p img[align=left]{
+		float: left;
+		margin-left: 0;
+	}
+
+strong,b{ font-weight: bold; }
+em,i{ font-style: italic; }
+sub,sup{
+	font-size: 0.7em;
+}
+sub{ vertical-align: bottom; }
+sup{ vertical-align: top; }
+
+/*
+LISTS
+==================================*/
+ul,ol{
+	margin: 0.5em 0 1em 1.2em;
+	padding: 0;
+}
+	li{
+		margin: 0;
+		padding: 0;
+	}
+	ul li{
+		background: none;
+		list-style-type: disc;
+		margin-left: 1.7em;
+		padding-left: 0.7em;
+		_padding-left: 0.5em;
+	}
+	ol li{
+		padding-left: 0.3em;
+		margin-left: 2em;
+		list-style-type: decimal;
+	}
+
+
+/*
+FORMS
+==================================*/
+form{
+	font-size: 1em;
+}
+
+input,
+select,
+select option,
+textarea{
+	font-family: Tahoma, sans-serif;
+	font-size: 1em;
+	line-height: 100%;
+}
+
+input.text,
+textarea{
+	width: 270px;
+}
+form input.cond{
+	width: 150px;
+}
+form input.submit{
+	border: none;
+	color: #333;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	//overflow: visible;
+	//width: 1;
+}
+
+form input.invalid,
+form textarea.invalid{
+	background-color: #faa;
+	color: #424242;
+}
+form input[disabled],
+form input.disabled{
+	color: #666;
+	cursor: auto;
+}
+
+form label{
+	font-size: 1em;
+}
+	form label.iconed{
+		display: -moz-inline-stack;
+		display: inline-block;
+	}
+
+form .comment{
+	padding: 0.4em 0 .6em
+}
+
+form .line{
+	clear: both;
+	padding: 0.4em 0;
+	position: relative;
+	width: 100%;
+}
+	form .line .field{
+		display: inline;
+		float: left;
+		margin-right: -12em;
+		width: 12em;
+	}
+	form .line .value{
+		display: block;
+		padding-left: 12.7em;
+	}
+
+form input.pseudo{
+	position: absolute;
+	left: -9999em;
+	visibility: hidden;
+}
+form label.pseudo{
+}
+
+
+/*
+TABLES
+==================================*/
+table,
+table td,
+table th{
+	font-size: 1em;
+}
+
+table.data{
+	border: none;
+	border-collapse: collapse;
+	font-size: 1em;
+	margin: 10px 0;
+}
+	table.data td,
+	table.data th{
+		border-bottom: 1px solid #5b5b5b;
+		font-family: Tahoma, sans-serif;
+	}
+
+	table.data thead{
+	}
+		table.data thead th,
+		table.data thead td{
+			font-family: Tahoma, sans-serif;
+			font-size: 1em;
+			font-weight: normal;
+			padding: 0.5em 0 .3em;
+			text-align: left;
+		}
+
+	table.data tbody{
+	}
+		table.data tbody td{
+			padding: 1em .3em;
+			vertical-align: top;
+		}
+
+	table.data tfoot{
+	}
+		table.data tfoot td{
+			padding: 1em .3em;
+			vertical-align: top;
+		}

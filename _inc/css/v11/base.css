@@ -1,0 +1,258 @@
+/**
+ * base.css
+ *
+ * @author: Vladimir 'Vii' Varankin
+ * @copyright: Webway IT Labs (www.webway.ru) | 2009
+ */
+
+/*
+LAYOUT
+==================================*/
+html,
+body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 100%;
+}
+
+.cols{
+	overflow: hidden;
+	_zoom: 1;
+}
+	.cols .c1,
+	.cols .c2,
+	.cols .c33,
+	.cols .c50,
+	.cols .cw{
+		display: inline;
+		_zoom: 1;
+	}
+.c1{
+	float: left;
+}
+.c2{
+	float: right;
+}
+.c-33{
+	float: left;
+	width: 33.3%;
+}
+.c-50{
+	float: right;
+	width: 49.433%;
+}
+.c-w{
+	float: left;
+	width: 100%;
+}
+
+.cols,
+.cols .c-last{
+	overflow: visible;
+	width: auto !important;
+}
+.cols .c-last{
+	float: none;
+	overflow: hidden;
+	_float: right;
+	_overflow: visible;
+}
+
+
+/*
+BASE CLASSES
+==================================*/
+.fleft{ float:left; }
+.fright{ float:right; }
+.clearall{ clear:both; }
+br.clearall{
+	font-size: 1px;
+	line-height: 1px;
+}
+
+/* =floats clearing */
+.clearfix:after,
+.cols:after,
+.hor:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+* html .clearfix,
+* html .cols
+* html .hor{
+	height: 1%;
+	overflow: visible;
+}
+*+html .clearfix,
+*+html .cols,
+*+html .hor{
+	min-height: 1%;
+}
+
+.graph{
+	display:block;
+	line-height:1;
+	margin:0;
+	padding:0;
+	position:relative;
+	overflow:hidden;
+}
+	.graph i{
+		background:transparent no-repeat 0 0;
+		display:block;
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:0;left:0;
+		z-index:1;
+	}
+	a.graph i{ cursor:pointer; }
+
+/* graph header */
+.h{
+	background:transparent none no-repeat 0 0;
+	display:block;
+	line-height:1;
+	overflow:hidden;
+	text-indent:-999em;
+}
+a.h{
+	cursor:pointer;
+	outline:none;
+}
+
+/* =iconed */
+.i{
+	background:transparent no-repeat 0 0;
+	display: -moz-inline-stack;
+	display: inline-block;
+	//display: inline;
+	//zoom: 1;
+	padding: 0;
+}
+
+/* =iconed extened */
+.i_ext{ }
+
+.hor,
+.hor li{
+	background-image: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+	.hor li{
+		display: inline;
+		display: -moz-inline-stack;
+		display: inline-block;
+		vertical-align: top;
+	}
+		.hor li .graph{
+			display: inline;
+			float: left;
+		}
+
+.vert,
+.vert li,
+.vert dt,
+.vert dd{
+	background-image: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+	.vert li{
+		display: block;
+	}
+
+.list{
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+	.list .counter{
+		position: absolute;
+		left: 0px;
+		-left: -3ex;
+		top: .4em;
+		padding: 0 !important;
+	}
+
+/*
+ROUND
+==================================*/
+.rc{
+	display: block;
+	position: relative;
+	overflow: hidden;
+	_zoom: 1;
+}
+	.rc .c{
+		display: block;
+		overflow: hidden;
+		position: relative;
+		z-index: 2;
+	}
+	/* Corners */
+	.rc .t,
+	.rc .b{
+		background: transparent no-repeat 0 0;
+		display: block;
+		position: absolute;
+		z-index: 1;
+	}
+	.rc .b{
+		top: auto !important;
+	}
+	.rc .tr,
+	.rc .br{
+		/* IE's "right" bug fix */
+		margin-left: 100%;
+	}
+.rc-shape{}
+	.rc-shape .t,
+	.rc-shape .b{
+		width: 100%;
+		height: 100%;
+	}
+
+/*
+BUTTONS
+==================================*/
+.button{ }
+	.button .b,
+	.button ins{
+		background: transparent url(/_pic/btn-orange.png) no-repeat 0 0;
+	}
+	.button,
+	.button .b{
+		display: -moz-inline-stack;
+		display: inline-block;
+		//display: inline;
+		//zoom: 1;
+		position: relative;
+		//vertical-align: 0%;
+	}
+	.button .b{
+		overflow: hidden;
+		padding: 0 3px 0 9px;
+	}
+		.button .b a{
+			text-decoration: none;
+		}
+			.button .b a *{
+				text-decoration: underline;
+			}
+	.button ins{
+		display: block;
+		position: absolute;
+		top:0;left:0;
+		margin-left: 100%;
+	}
